@@ -7,14 +7,12 @@ const initialColor = {
 };
 
 const ColorList = ({ colors, updateColors }) => {
-  console.log(colors);
   const [editing, setEditing] = useState(false);
   const [colorToEdit, setColorToEdit] = useState(initialColor);
 
   const editColor = color => {
     setEditing(true);
 		setColorToEdit(color);
-		console.log("FROM EDIT COLOR", color)
   };
 
   const saveEdit = e => {
@@ -26,7 +24,6 @@ const ColorList = ({ colors, updateColors }) => {
 		axisoWithAuth()
 			.put(`/colors/${colorToEdit.id}`, colorToEdit)
 			.then(res => {
-				// console.log(res)
 				updateColors(colors.map(color => res.data.id === color.id ? res.data : color))
 				setEditing(false)
 			})
