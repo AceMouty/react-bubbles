@@ -33,7 +33,7 @@ const Login = (props) => {
 						onChange={changeHandler}
 					/>
 					<input 
-					type="text"
+					type="password"
 					name="password"
 					value={user.password}
 					onChange={changeHandler}
