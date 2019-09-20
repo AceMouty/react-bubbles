@@ -12,6 +12,7 @@ function App() {
     <Router>
       <div className="App">
         <Route exact path="/" component={Login} />
+				<Route path="/login" component={Login} />
 				<PrivateRoute path="/bubble-page" component={BubblePage} />
         {/* 
           Build a PrivateRoute component that will 
