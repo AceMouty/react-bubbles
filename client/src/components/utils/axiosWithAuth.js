@@ -10,3 +10,5 @@ function axisoWithAuth() {
 		}
 	})
 }
+
+export default axisoWithAuth;
