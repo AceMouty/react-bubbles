@@ -29,10 +29,21 @@ In this project you will create a login page and request a token from the server
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Explain what a token is used for.
+	
+	JSON Web Tokens (JWT) are used for client side authentication. We generate a token but this token is not stored in our sever/db instead there is a hash on the token and if the data matches we are authenticated.
+
 - [ ] What steps can you take in your web apps to keep your data secure?
+
+	We can create `private routes` and also use `JWT` to protect our applications and our users to make sure only authenticated users can see and interact with certain parts of our applications.
+
 - [ ] Describe how web servers work.
+
+	A server will recieve HTTP requests and will handle the request accordingly. The main types of HTTP request are `get, put, post, and delete`
+	these request are what make up CRUD operations
+
 - [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
 
+	CRUD operations: `get, put, post, and delete`, `get` allows us to read the data. `put` allows us to update the data, `post` allows us to create new data. `delete` allows us to delete our data. 
 
 ## Project Set Up
 
